@@ -1,4 +1,8 @@
-@tailwind base;
+:root {
+  background-color: rgba(127, 178, 255, 0.564);
+}
+
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -30,4 +34,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
