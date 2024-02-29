@@ -18,7 +18,7 @@ export default function Post() {
 
   return (
     <div>
-      <h2>Whats your vibe?ß</h2>
+      <h2>Whats your vibe?</h2>
       <form action={handleAddSong} className="">
         <label className="">Name</label>
         <input name="artist" placeholder="artist" />
