@@ -1,7 +1,7 @@
-import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import SubmitButton from "@/components/SubmitButton";
+import SubmitButton from "@/app/components/SubmitButton";
+import { sql } from "@vercel/postgres";
 
 export default function Post() {
   async function handleAddSong(formData) {
@@ -10,10 +10,11 @@ export default function Post() {
     const title = formData.get("title");
     const comment = formData.get("comment");
 
-    await sql`INSERT INTO music (artist,title,comment) VALUES (${artist}, ${title},${comment})`;
+    const data =
+      await sql`INSERT INTO music (artist,title,comment) VALUES (${artist}, ${title},${comment})`;
 
-    revalidatePath("/catalogue");
-    redirect("/catalogue");
+    revalidatePath("/add-post");
+    redirect("/add-post");
   }
 
   return (

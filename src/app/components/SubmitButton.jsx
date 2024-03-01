@@ -6,7 +6,7 @@ export default function SubmitButton() {
 
   return (
     <button disabled={pending} type="submit" className="">
-      {pending ? "Adding song..." : "Add sond"}
+      {pending ? "Adding song..." : "Add song"}
     </button>
   );
 }
