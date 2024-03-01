@@ -6,7 +6,7 @@ export default function Nav() {
         <Link href="/">Home</Link>
       </li>
       <li className="m-4">
-        <Link href="/add-post">catalogue</Link>
+        <Link href="/catalogue">catalogue</Link>
       </li>
       <li className="m-4">
         <Link href="/add-post"> add post</Link>

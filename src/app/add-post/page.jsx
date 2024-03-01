@@ -1,7 +1,7 @@
+import { sql } from "pg";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import SubmitButton from "@/app/components/SubmitButton";
-import { sql } from "@vercel/postgres";
 
 export default function Post() {
   async function handleAddSong(formData) {
