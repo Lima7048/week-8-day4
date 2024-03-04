@@ -1,3 +1,5 @@
+import songs from "./Songlog";
+
 export default function CommentPage({ params }) {
   console.log(params); // Output: { id: 1, commentId: 2 }
   return (

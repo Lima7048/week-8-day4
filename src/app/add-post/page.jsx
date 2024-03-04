@@ -13,7 +13,7 @@ export default function Post() {
       await sql`INSERT INTO music (artist,title,comment) VALUES (${artist}, ${title},${comment})`;
 
     revalidatePath("/add-post");
-    redirect("/add-post");
+    redirect("/songs");
   }
 
   return (
