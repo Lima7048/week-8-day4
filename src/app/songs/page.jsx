@@ -14,12 +14,14 @@ export default async function Songlog() {
 
   return (
     <div>
-      <h2>List of Posts</h2>
+      <h2 className=" font-mono m-1 text-blue-50 bg-green-100 bg-opacity-30 text-6xl flex flex-col items-center backdrop-blur ">
+        List of Posts
+      </h2>
       <Asc />
       <Desc />
       {/* <button onClick={SortAsc}>Acsending Order</button>
       <button onClick={SortDesc}>Decending Order</button> */}
-      <ul>
+      <ul className=" m-3 bg-indigo-900 bg-opacity-60 backdrop-blur border rounded-md p-4 ">
         {data.map((Songlog) => (
           <li key={Songlog.id}>
             <a href={`/songs/${Songlog.id}`}>

@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main>
       <div>
-        <h1 className="text-white color; text-center">
-          Welcome to my blog space
+        <h1 className="font-mono m-1 text-blue-50 bg-green-100 bg-opacity-30 text-7xl flex flex-col items-center backdrop-blur">
+          🤍 Welcome to my blog 🤍
         </h1>
         <Image
           className="bg-cover"
